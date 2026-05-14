@@ -194,3 +194,59 @@ The project demonstrates how Big Data technologies can support environmental man
 ## Author
 
 Natalia Acevedo Hoyos
+
+
+---
+
+# 🇪🇸 Resumen en Español
+
+## 🌳 ¿De qué trata este proyecto?
+
+Este proyecto desarrolla un pipeline de Big Data para el procesamiento, análisis y visualización de inventarios forestales urbanos utilizando Databricks y arquitectura Delta Lake.
+
+La información original del inventario forestal fue transformada mediante procesos ETL en diferentes capas:
+- Bronze (datos crudos),
+- Silver (datos limpios y enriquecidos),
+- Gold (tablas analíticas y KPIs).
+
+El sistema permite analizar:
+- especies arbóreas dominantes,
+- estado fitosanitario,
+- interferencias con infraestructura urbana,
+- distribución de alturas y diámetros,
+- volumen forestal,
+- área basal,
+- y clasificación preliminar de riesgo urbano.
+
+Además, se construyeron dashboards interactivos y workflows automatizados para actualizar y visualizar la información de manera eficiente.
+
+---
+
+## 🌿 Objetivo
+
+Demostrar cómo tecnologías Big Data pueden apoyar procesos de gestión ambiental, planificación urbana y análisis forestal mediante pipelines automatizados y visualizaciones interactivas.
+
+---
+
+## 🛠️ Tecnologías utilizadas
+
+- Databricks
+- PySpark
+- Delta Lake
+- SQL
+- GitHub
+- Dashboards interactivos
+
+---
+
+## 🌎 Aplicaciones
+
+Este tipo de solución puede aplicarse en:
+- inventarios forestales urbanos,
+- estudios ambientales,
+- compensaciones forestales,
+- análisis de riesgo urbano,
+- planificación de infraestructura,
+- y monitoreo ambiental.
+
+---
