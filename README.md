@@ -1,4 +1,66 @@
+# 🌳 ForestLake — Urban Forest Big Data Pipeline 🌿
+
+> *Transforming urban forest inventory data into environmental insights through Big Data analytics.*
+
+---
+
+## 🌎 What is this project about?
+
+Cities contain thousands of trees that interact every day with roads, buildings, power lines and urban infrastructure.  
+Managing this information manually can become difficult, especially when environmental authorities and engineering projects require fast and reliable analysis.
+
+This project was developed to transform raw forest inventory data into organized environmental information using Big Data technologies. Through automated pipelines, ecological variables, risk indicators and interactive dashboards, the system helps understand:
+- 🌳 which tree species dominate the area,
+- ⚠️ where urban interferences exist,
+- 🌿 the health condition of the trees,
+- 📏 how tree height and diameter are distributed,
+- 🏙️ and which individuals may represent urban risk.
+
+Even for people without experience in forestry or data science, the dashboard allows environmental and urban information to be explored visually and intuitively.
+
+---
+
+# 🌲 Main Features
+
+✅ Automated ETL pipeline  
+✅ Bronze / Silver / Gold architecture  
+✅ Environmental KPI generation  
+✅ Urban interference analysis  
+✅ Forestry structure indicators  
+✅ Interactive dashboards  
+✅ Databricks workflow automation  
+✅ Delta Lake storage  
+
+---
+
+# 🪵 Environmental Indicators Included
+
+- 🌳 Total inventoried trees
+- 🌿 Species and family composition
+- ⚕️ Phytosanitary condition
+- 🌸 Flowering and fruiting individuals
+- ⚡ Urban interference with infrastructure
+- 📏 Height and DAP ranges
+- 🚨 Preliminary urban risk classification
+- 🌲 Forestry volume and basal area
+
+---
+
+# 🖥️ Technologies Used
+
+| Technology | Purpose |
+|---|---|
+| Databricks | Big Data platform |
+| PySpark | Distributed data processing |
+| Delta Lake | Structured storage |
+| SQL | Data querying |
+| GitHub | Version control |
+| Dashboards | Interactive visualization |
+
+---
+
 # Urban Forest Big Data Pipeline
+
 ## Project Overview
 
 This project presents a Big Data pipeline for the processing, enrichment, analysis and visualization of urban forest inventory data using Databricks and Delta Lake architecture.
