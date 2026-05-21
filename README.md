@@ -2,121 +2,130 @@
 
 > *Transforming urban forest inventory data into environmental insights through Big Data analytics.*
 
+![Databricks](https://img.shields.io/badge/Databricks-BigData-red)
+![PySpark](https://img.shields.io/badge/PySpark-ETL-orange)
+![Delta Lake](https://img.shields.io/badge/DeltaLake-Storage-blue)
+![SQL](https://img.shields.io/badge/SQL-Analytics-green)
+![Dashboard](https://img.shields.io/badge/Dashboard-Interactive-success)
+
 ---
 
-## 🌎 What is this project about?
+# 🌎 What is this project about?
 
-Cities contain thousands of trees that interact every day with roads, buildings, power lines and urban infrastructure.  
-Managing this information manually can become difficult, especially when environmental authorities and engineering projects require fast and reliable analysis.
+Cities contain thousands of trees that interact every day with roads, buildings, power lines and urban infrastructure. Managing this information manually can become difficult, especially when environmental authorities and engineering projects require fast and reliable analysis.
 
 This project was developed to transform raw forest inventory data into organized environmental information using Big Data technologies. Through automated pipelines, ecological variables, risk indicators and interactive dashboards, the system helps understand:
-- 🌳 which tree species dominate the area,
-- ⚠️ where urban interferences exist,
-- 🌿 the health condition of the trees,
-- 📏 how tree height and diameter are distributed,
-- 🏙️ and which individuals may represent urban risk.
 
-Even for people without experience in forestry or data science, the dashboard allows environmental and urban information to be explored visually and intuitively.
+- 🌳 Which tree species dominate the area
+- ⚠️ Where urban interferences exist
+- 🌿 The health condition of the trees
+- 📏 How tree height and diameter are distributed
+- 🏙️ Which individuals may represent urban risk
 
----
-
-# 🌲 Main Features
-
-✅ Automated ETL pipeline  
-✅ Bronze / Silver / Gold architecture  
-✅ Environmental KPI generation  
-✅ Urban interference analysis  
-✅ Forestry structure indicators  
-✅ Interactive dashboards  
-✅ Databricks workflow automation  
-✅ Delta Lake storage  
+Even for people without experience in forestry or data science, the dashboards allow environmental and urban information to be explored visually and intuitively.
 
 ---
 
-# 🪵 Environmental Indicators Included
+# 📑 Table of Contents
 
-- 🌳 Total inventoried trees
-- 🌿 Species and family composition
-- ⚕️ Phytosanitary condition
-- 🌸 Flowering and fruiting individuals
-- ⚡ Urban interference with infrastructure
-- 📏 Height and DAP ranges
-- 🚨 Preliminary urban risk classification
-- 🌲 Forestry volume and basal area
-
----
-
-# 🖥️ Technologies Used
-
-| Technology | Purpose |
-|---|---|
-| Databricks | Big Data platform |
-| PySpark | Distributed data processing |
-| Delta Lake | Structured storage |
-| SQL | Data querying |
-| GitHub | Version control |
-| Dashboards | Interactive visualization |
+- [🌎 Project Overview](#-what-is-this-project-about)
+- [🎯 Objectives](#-objectives)
+- [🏗️ Architecture](#️-architecture)
+- [⚙️ Technologies Used](#️-technologies-used)
+- [🔄 Data Processing Workflow](#-data-processing-workflow)
+- [🌲 Environmental KPIs](#-environmental-kpis)
+- [📊 Dashboard & Visual Analytics](#-dashboard--visual-analytics)
+- [⚡ Workflow Automation](#-workflow-automation)
+- [📸 Project Screenshots](#-project-screenshots)
+- [🌱 Final Notes](#-final-notes)
+- [🇪🇸 Resumen en Español](#-resumen-en-español)
 
 ---
 
-# Urban Forest Big Data Pipeline
+# 🎯 Objectives
 
-## Project Overview
-
-This project presents a Big Data pipeline for the processing, enrichment, analysis and visualization of urban forest inventory data using Databricks and Delta Lake architecture.
-
-The workflow was designed to support environmental analysis, urban forestry management and infrastructure risk assessment through automated ETL processes and interactive dashboards.
-
----
-
-## Objectives
-
-- Process urban forest inventory datasets using scalable Big Data tools.
-- Apply Bronze, Silver and Gold architecture for data engineering workflows.
-- Generate environmental and urban KPIs for decision-making.
-- Visualize forestry indicators through interactive dashboards.
-- Automate the execution of the pipeline using Databricks Workflows.
+- Process urban forest inventory datasets using scalable Big Data tools
+- Apply Bronze, Silver and Gold architecture for data engineering workflows
+- Generate environmental and urban KPIs for decision-making
+- Visualize forestry indicators through interactive dashboards
+- Automate pipeline execution using Databricks Workflows
 
 ---
 
-## Architecture
+# 🏗️ Architecture
 
-### Bronze Layer
+The project follows a Medallion Architecture (Bronze, Silver and Gold layers) using Delta Lake.
+
+```text
+RAW DATA
+   ↓
+BRONZE LAYER
+(raw ingestion)
+   ↓
+SILVER LAYER
+(cleaning + enrichment)
+   ↓
+GOLD LAYER
+(KPIs + analytics)
+   ↓
+# DASHBOARD & WORKFLOWS
+```
+
+---
+
+# 🥉 Bronze Layer
+
 Raw ingestion of the original forest inventory dataset.
 
-### Silver Layer
-Data cleaning, normalization and enrichment:
+Main tasks:
+- Raw data loading
+- Initial storage
+- Preservation of source structure
+
+---
+
+# 🥈 Silver Layer
+
+Data cleaning, normalization and enrichment.
+
+Main transformations:
 - Column standardization
 - Null handling
 - Ecological variable generation
 - Urban interference analysis
 - Height and DAP categorization
+- Risk enrichment
+---
 
-### Gold Layer
-Creation of analytical tables and KPIs:
+# 🥇 Gold Layer
+
+Creation of analytical tables and environmental KPIs.
+
+Generated analytics:
 - Species composition
 - Family distribution
 - Phytosanitary condition
 - Urban interference
 - Height ranges
-- Urban risk assessment
-- Volume and basal area indicators
+- Urban risk classification
+- Forestry volume indicators
+- Basal area indicators
+---
+
+# ⚙️ Technologies Used
+| Technology           | Purpose                     |
+| -------------------- | --------------------------- |
+| Databricks           | Big Data platform           |
+| PySpark              | Distributed data processing |
+| Delta Lake           | Structured storage          |
+| SQL                  | Data querying               |
+| GitHub               | Version control             |
+| Dashboards           | Interactive visualization   |
+| Databricks Workflows | Automation                  |
 
 ---
 
-## Technologies Used
-
-- Databricks
-- PySpark
-- Delta Lake
-- SQL
-- GitHub
-- Interactive Dashboards
-- Big Data Architecture
-
----
-
-## Data Processing Workflow
+# 🔄 Data Processing Workflow
 
 The pipeline processes forestry inventory information through automated ETL stages:
 
@@ -129,124 +138,176 @@ The pipeline processes forestry inventory information through automated ETL stag
 
 ---
 
-## Environmental KPIs
+# 🌲 Environmental KPIs
 
 The project includes:
 
-- Total inventoried trees
-- Trees with urban interference
-- Trees with flowers and fruits
+🌳 Total inventoried trees
+🌿 Species and family composition
+⚕️ Phytosanitary condition
+🌸 Flowering and fruiting individuals
+⚡ Urban interference with infrastructure
+📏 Height and DAP ranges
+🚨 Preliminary urban risk classification
+🌲 Forestry volume indicators
+🌱 Basal area indicators
+
+---
+
+# 📊 Dashboard & Visual Analytics
+
+Interactive dashboards were developed in Databricks to support environmental and urban forestry analysis.
+
+Main visualizations:
+- Top species composition
+- Dominant botanical families
+- Urban interference analysis
+- Height range distribution
 - Phytosanitary condition
-- Species and family distribution
-- Height range analysis
-- Urban risk classification
 - Forestry volume indicators
-- Basal area indicators
+- Preliminary urban risk classification
 
 ---
 
-## Dashboard
+# ⚡ Workflow Automation
 
-Interactive dashboards were developed in Databricks to visualize:
-
-- Species composition
-- Family dominance
-- Urban interference
-- Risk indicators
-- Forestry structure
-- Environmental variables
+The pipeline execution was automated using Databricks Jobs and Workflows, enabling scalable scheduled processing and future integration with incoming forestry datasets.
 
 ---
 
-## Workflow Automation
-
-The pipeline execution was automated using Databricks Jobs and Workflows, enabling scheduled processing and scalable future integration with incoming datasets.
+# 📸 Project Screenshots
 
 ---
 
-## Results
+## 🌳 Interactive Dashboard Overview
 
-The project demonstrates how Big Data technologies can support environmental management, urban forestry planning and infrastructure risk analysis through scalable analytical pipelines.
-
----
-
-## Future Improvements
-
-- Real-time streaming ingestion
-- Automated file detection
-- Geospatial mapping integration
-- Machine learning risk prediction
-- Biodiversity indicators
-- Advanced urban analytics
+![Dashboard Overview](dashboard_overview)
 
 ---
 
-## Repository Contents
+## 🌿 Forestry Analytics Table
 
-- Databricks notebooks
-- Dashboard screenshots
-- Workflow screenshots
-- Environmental KPI generation
-- Big Data ETL pipeline
+![Analytics](analytics.png)
 
 ---
 
-## Author
+## 📊 Top Species Distribution
 
-Natalia Acevedo Hoyos
+![Top Species](top_species.png)
 
+---
+
+## 🌱 Phytosanitary Status
+
+![Phytosanitary](phytosanitary_status.png)
+
+---
+
+## ⚡ Urban Infrastructure Interference
+
+![Urban Interference](urban_interference.png)
+
+---
+
+## 📏 Height Range Distribution
+
+![Height Distribution](height_distribution.png)
+
+---
+
+## 🌲 Forestry Volume Indicators
+
+![Forest Volume](forest_volume.png)
+
+---
+
+## 📋 Executive KPI Summary
+
+![Resume](resume.jpg)
+
+---
+
+## 🔄 Databricks Workflow & Automation
+
+![Workflow](workflow_job.png)
+
+---
+
+## 💻 Databricks Notebook Pipeline
+
+![Notebook](Task1.png)
+
+---
+
+## 🗂️ Databricks Catalog & Data Layers
+
+![Catalog](Catalog.png)
+
+---
+
+# 🌱 Final Notes
+
+This project demonstrates how environmental and urban forestry information can be transformed into scalable analytical solutions using Big Data technologies.
+
+The workflow combines environmental analysis, urban infrastructure assessment and automated data engineering processes to support decision-making and sustainable urban management.
 
 ---
 
 # 🇪🇸 Resumen en Español
 
-## 🌳 ¿De qué trata este proyecto?
+---
+
+# 🌳 ¿De qué trata este proyecto?
 
 Este proyecto desarrolla un pipeline de Big Data para el procesamiento, análisis y visualización de inventarios forestales urbanos utilizando Databricks y arquitectura Delta Lake.
 
 La información original del inventario forestal fue transformada mediante procesos ETL en diferentes capas:
-- Bronze (datos crudos),
-- Silver (datos limpios y enriquecidos),
-- Gold (tablas analíticas y KPIs).
+
+Bronze (datos crudos)
+Silver (datos limpios y enriquecidos)
+Gold (tablas analíticas y KPIs)
 
 El sistema permite analizar:
-- especies arbóreas dominantes,
-- estado fitosanitario,
-- interferencias con infraestructura urbana,
-- distribución de alturas y diámetros,
-- volumen forestal,
-- área basal,
-- y clasificación preliminar de riesgo urbano.
+
+especies arbóreas dominantes,
+estado fitosanitario,
+interferencias con infraestructura urbana,
+distribución de alturas y diámetros,
+volumen forestal,
+área basal,
+y clasificación preliminar de riesgo urbano.
 
 Además, se construyeron dashboards interactivos y workflows automatizados para actualizar y visualizar la información de manera eficiente.
 
 ---
 
-## 🌿 Objetivo
+# 🌿 Objetivo
 
 Demostrar cómo tecnologías Big Data pueden apoyar procesos de gestión ambiental, planificación urbana y análisis forestal mediante pipelines automatizados y visualizaciones interactivas.
 
----
-
-## 🛠️ Tecnologías utilizadas
-
-- Databricks
-- PySpark
-- Delta Lake
-- SQL
-- GitHub
-- Dashboards interactivos
+🛠️ Tecnologías utilizadas
+Databricks
+PySpark
+Delta Lake
+SQL
+GitHub
+Dashboards interactivos
 
 ---
 
-## 🌎 Aplicaciones
+# 🌎 Aplicaciones
 
 Este tipo de solución puede aplicarse en:
-- inventarios forestales urbanos,
-- estudios ambientales,
-- compensaciones forestales,
-- análisis de riesgo urbano,
-- planificación de infraestructura,
-- y monitoreo ambiental.
+
+inventarios forestales urbanos,
+estudios ambientales,
+compensaciones forestales,
+análisis de riesgo urbano,
+planificación de infraestructura,
+monitoreo ambiental,
+y análisis territorial.
 
 ---
+
+# 👩‍💻 Author
+# Natalia Acevedo Hoyos
