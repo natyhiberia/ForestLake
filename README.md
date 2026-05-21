@@ -187,7 +187,7 @@ The pipeline execution was automated using Databricks Jobs and Workflows, enabli
 
 ## 🌿 Forestry Analytics Table
 
-![Analytics](analytics.png)
+![Analytics](analytics.png.png)
 
 ---
 
