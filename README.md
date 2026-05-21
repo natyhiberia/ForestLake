@@ -181,7 +181,7 @@ The pipeline execution was automated using Databricks Jobs and Workflows, enabli
 
 ## 🌳 Interactive Dashboard Overview
 
-![Dashboard Overview](dashboard_overview)
+![Dashboard Overview](dashboard_overview.png)
 
 ---
 
